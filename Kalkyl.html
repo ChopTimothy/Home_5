@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function click1() {
+      let f1 = document.getElementsByName("field1");
+      let r = document.getElementById("result");           
+      let K = document.getElementsByName("select1");
+
+      r.innerHTML = f1[0].value * K[0].value;
+
+        let s = document.getElementsByName("select1");
+        console.log(s[0].value);
+        return false;
+
+    }
+    </script> 
+</head>
+<body>
+    
+    <form>
+        <select name="select1">
+        <option value='10'>Кактус</option>
+        <option value="55">Тюльпан жёлтый</option>
+        <option value="60">Тюльпан красный</option>
+        <option value="150">Роза крвсная</option>
+        <option value="111">Гладиолус</option>
+        </select>
+    
+        <div>Введите количество товара</div>
+        <input name="field1" type="text" placeholder="количество"><br>
+      
+        <button id="button1" onclick="return click1();">Подсчёт стоимости</button>
+      
+    </form>
+    <div id="result"></div>
+</body>
+</html>
+
+
+ 
+    
+    
+    
